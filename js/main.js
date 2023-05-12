@@ -42,9 +42,12 @@ const membri = [
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 //Usa console.log() per stampare in console le proprietà di ogni membro del team;
 
+console.log(membri);
+
 
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
+
 
 
 
