@@ -48,7 +48,10 @@ console.log(membri);
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
 
-
+for (let i = 0; i < membri.length; i++){
+    let objectIesimo = membri[i];
+    console.log(objectIesimo);
+}
 
 
 
