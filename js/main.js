@@ -7,9 +7,9 @@
 
 const membri = [
     {
-        'nome': 'Wayne Barnett',
-        'ruolo': 'Wayne Barnett	Founder & CEO',
-        'foto': 'wayne-barnett-founder-ceo.jpg'
+    'nome': 'Wayne Barnett',
+    'ruolo': 'Wayne Barnett	Founder & CEO',
+    'foto': 'wayne-barnett-founder-ceo.jpg'
 },
 {
     'nome': 'Angela Caroll',
@@ -50,7 +50,11 @@ console.log(membri);
 
 for (let i = 0; i < membri.length; i++){
     let objectIesimo = membri[i];
-    console.log(objectIesimo);
+    //console.log(objectIesimo);
+
+    for (let chiaveObj in objectIesimo) {
+        console.log(objectIesimo[chiaveObj]);
+    }
 }
 
 
