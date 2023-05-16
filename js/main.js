@@ -48,14 +48,27 @@ console.log(membri);
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
 
+
+const containerSelection = document.getElementById("container");
+console.log(containerSelection);
+
 for (let i = 0; i < membri.length; i++){
     let objectIesimo = membri[i];
-    //console.log(objectIesimo);
+    
+    
 
-    for (let chiaveObj in objectIesimo) {
-        console.log(objectIesimo[chiaveObj]);
-    }
+    const nomeMembro = objectIesimo.nome;
+    const ruoloMembro = objectIesimo.ruolo;
+    const fotoMembro = objectIesimo.foto;
+
+    const cardElement = `<div class="card">
+                            <img src=img/${fotoMembro} alt="">
+                            <div class="cardElement_description">${nomeMembro}</div>
+                            <div class="cardElement_description">${ruoloMembro}</div>
+
+                        </div>`;
+
+
+    containerSelection.innerHTML += cardElement;
 }
-
-
 
